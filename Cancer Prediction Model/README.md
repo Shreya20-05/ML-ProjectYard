@@ -1,35 +1,36 @@
-# BREAST CANCER PREDICTION
+# Cervical Cancer Classification
 
-## GOAL
 
-The main goal is to predict whether a patient who is suffering from breast cancer is of which type. Benign or Malignant.
+# Dataset :
 
-## DATASET
+ Data set used for classification is available here *https://www.kaggle.com/loveall/cervical-cancer-risk-classification*
 
-DATASET - "https://www.kaggle.com/uciml/breast-cancer-wisconsin-data?select=data.csv". I have taken the dataset from Kaggle.
 
-## WHAT I HAD DONE
 
-- Firstly imported the required libraries needed for the project
-- Taking path of the dataset as input and reading it using pd.read_csv.
-- To make a good prediction, I had dropped few unnamed and irrelevent data from the dataset. 
-- With the well needed data, I had trained and tested using train_test_split from sklearn.
-- Finally, I had incorporated them using 4 models to compare the accuracy.
+Here our predictor variable y is  **Biopsy** 
+There are **20** variable of x used to predict y.
+Out of 858 samples we have divided into training **60%(514)** and **testing 40%(344)** data set.
 
-## MODELS USED
+## Logistic Regression
 
-- Logistic Regression
-- Decision Tree Classifier
-- Random Forest Classifier
-- Support Vector Classifier
+**Training accuracy : 0.9396887159533074**
 
-## LIBRARIES NEEDED
+**Testing accuracy : 0.9302325581395349**
 
-1. Numpy
-2. Pandas
-3. MatplotLib
-4. Seaborn
+## Support Vector Classifier
 
-## CONCLUSION
+**Training accuracy : 0.9396887159533074**
 
-With comparison, I could notice that Logistic Regression(97.07%) and Support Vector Classifier(95.32%) has highest accuracy.
+**Testing accuracy : 0.9302325581395349**
+
+## Random Forest Classifier
+
+**Training accuracy : 0.9630350194552529**
+
+**Testing accuracy : 0.9302325581395349**
+
+## Ada Boost Classifier
+
+**Training accuracy : 0.9416342412451362**
+
+**Testing accuracy : 0.9186046511627907**
